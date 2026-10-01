@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="RED">
+    
+
+    <form>
+  <input type="text" placeholder="Name" id="name">
+  <input type="email" placeholder="email id" id="email">
+  <input type="password" placeholder="Pass" id="password">
+  <button>Submit</button>
+</form>
+
+<script>
+  let name = document.getElementById("name");
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+
+  let btn = document.getElementsByTagName("button");
+  let users =[];
+  btn[0].addEventListener("click", (e) => {
+    e.preventDefault();
+    let user = {
+        name: name.value,
+        email: email.value,
+        password: password.value
+    }
+    name.value = "";
+    email.value = "";   
+    password.value = "";
+    users.push(user);
+    console.log(users);
+  });
+  //btn[0].addEventListener("click", () => {
+    //  console.log(name.valu,email.valu,password.value);
+  //});
+
+</script>
+</body>
+</html>

@@ -1,5 +1,10 @@
 h1{
     color: rgb(184, 30, 30);
-    text-align: center;
+    text-align: center; 
     background-color: antiquewhite;
+}
+h3{
+    color:rgb(24, 130, 175);
+    text-align: left;
+    background-color: blueviolet;
 }
